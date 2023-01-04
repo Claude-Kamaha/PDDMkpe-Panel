@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <section *ngFor="let field of formFields" class="form-row">
+    <app-dynanic-form-input [field]="field" [form]="form"></app-dynanic-form-input>
+  </section>
+  <button type="submit">Submit</button>
+</form>
